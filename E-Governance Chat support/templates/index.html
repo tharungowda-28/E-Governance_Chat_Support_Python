@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='govt_image.jpg') }}" alt="Government of INDIA">
+    </div>
+    <h1>Sarkar Support</h1>
+    <div class="main-container">
+        <div class="quote">
+            "E-governance chat support represents a transformative leap in public service, 
+            harnessing technology to provide instant, accessible, and efficient communication 
+            between citizens and their government. It embodies the principles of transparency, 
+            accountability, and responsiveness, ensuring that governmental support is just a 
+            message away, thus bridging the gap between the administration and the populace."
+        </div>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box"></div>
+            <div class="options-container" id="options-container"></div>
+            <input type="text" id="user-input" placeholder="Type a message..." autofocus>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
